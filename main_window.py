@@ -1,0 +1,151 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'main_window.ui'
+##
+## Created by: Qt User Interface Compiler version 5.14.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
+    QRect, QSize, QUrl, Qt)
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QFont,
+    QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
+    QRadialGradient)
+from PySide2.QtWidgets import *
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(730, 730)
+        MainWindow.setMinimumSize(QSize(730, 730))
+        MainWindow.setMaximumSize(QSize(730, 730))
+        self.actionContact = QAction(MainWindow)
+        self.actionContact.setObjectName(u"actionContact")
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.horizontalLayout = QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.tabWidget = QTabWidget(self.centralwidget)
+        self.tabWidget.setObjectName(u"tabWidget")
+        self.tab_1 = QWidget()
+        self.tab_1.setObjectName(u"tab_1")
+        self.analyze_btn = QPushButton(self.tab_1)
+        self.analyze_btn.setObjectName(u"analyze_btn")
+        self.analyze_btn.setGeometry(QRect(30, 80, 121, 28))
+        self.client_id = QLineEdit(self.tab_1)
+        self.client_id.setObjectName(u"client_id")
+        self.client_id.setGeometry(QRect(140, 40, 113, 22))
+        self.label_2 = QLabel(self.tab_1)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(30, 40, 101, 16))
+        self.groupBox = QGroupBox(self.tab_1)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setGeometry(QRect(30, 130, 641, 441))
+        self.exited_lbl = QLabel(self.groupBox)
+        self.exited_lbl.setObjectName(u"exited_lbl")
+        self.exited_lbl.setGeometry(QRect(40, 400, 371, 16))
+        self.is_active_member_lbl = QLabel(self.groupBox)
+        self.is_active_member_lbl.setObjectName(u"is_active_member_lbl")
+        self.is_active_member_lbl.setGeometry(QRect(40, 340, 291, 16))
+        self.credit_score_lbl = QLabel(self.groupBox)
+        self.credit_score_lbl.setObjectName(u"credit_score_lbl")
+        self.credit_score_lbl.setGeometry(QRect(40, 100, 231, 16))
+        self.num_of_products_lbl = QLabel(self.groupBox)
+        self.num_of_products_lbl.setObjectName(u"num_of_products_lbl")
+        self.num_of_products_lbl.setGeometry(QRect(40, 280, 211, 16))
+        self.customer_id = QLabel(self.groupBox)
+        self.customer_id.setObjectName(u"customer_id")
+        self.customer_id.setGeometry(QRect(40, 40, 241, 16))
+        self.geography_lbl = QLabel(self.groupBox)
+        self.geography_lbl.setObjectName(u"geography_lbl")
+        self.geography_lbl.setGeometry(QRect(40, 130, 181, 16))
+        self.balance_lbl = QLabel(self.groupBox)
+        self.balance_lbl.setObjectName(u"balance_lbl")
+        self.balance_lbl.setGeometry(QRect(40, 250, 211, 16))
+        self.has_cr_card_lbl = QLabel(self.groupBox)
+        self.has_cr_card_lbl.setObjectName(u"has_cr_card_lbl")
+        self.has_cr_card_lbl.setGeometry(QRect(40, 310, 391, 16))
+        self.tenure_lbl = QLabel(self.groupBox)
+        self.tenure_lbl.setObjectName(u"tenure_lbl")
+        self.tenure_lbl.setGeometry(QRect(40, 220, 221, 16))
+        self.age_lbl = QLabel(self.groupBox)
+        self.age_lbl.setObjectName(u"age_lbl")
+        self.age_lbl.setGeometry(QRect(40, 190, 191, 16))
+        self.gender_lbl = QLabel(self.groupBox)
+        self.gender_lbl.setObjectName(u"gender_lbl")
+        self.gender_lbl.setGeometry(QRect(40, 160, 251, 16))
+        self.estimated_salary_lbl = QLabel(self.groupBox)
+        self.estimated_salary_lbl.setObjectName(u"estimated_salary_lbl")
+        self.estimated_salary_lbl.setGeometry(QRect(40, 370, 331, 16))
+        self.surname_lbl = QLabel(self.groupBox)
+        self.surname_lbl.setObjectName(u"surname_lbl")
+        self.surname_lbl.setGeometry(QRect(40, 70, 241, 16))
+        self.tabWidget.addTab(self.tab_1, str())
+        self.tab_2 = QWidget()
+        self.tab_2.setObjectName(u"tab_2")
+        self.selected_file_name_lbl = QLabel(self.tab_2)
+        self.selected_file_name_lbl.setObjectName(u"selected_file_name_lbl")
+        self.selected_file_name_lbl.setGeometry(QRect(30, 70, 55, 16))
+        self.open_file_btn = QPushButton(self.tab_2)
+        self.open_file_btn.setObjectName(u"open_file_btn")
+        self.open_file_btn.setGeometry(QRect(30, 30, 93, 28))
+        self.selected_file = QLabel(self.tab_2)
+        self.selected_file.setObjectName(u"selected_file")
+        self.selected_file.setGeometry(QRect(80, 70, 751, 16))
+        self.start_btn = QPushButton(self.tab_2)
+        self.start_btn.setObjectName(u"start_btn")
+        self.start_btn.setGeometry(QRect(30, 110, 93, 28))
+        self.learning_progress_bar = QProgressBar(self.tab_2)
+        self.learning_progress_bar.setObjectName(u"learning_progress_bar")
+        self.learning_progress_bar.setEnabled(True)
+        self.learning_progress_bar.setGeometry(QRect(30, 170, 671, 31))
+        self.learning_progress_bar.setMaximum(100)
+        self.learning_progress_bar.setValue(0)
+        self.learning_progress_bar.setTextVisible(True)
+        self.tabWidget.addTab(self.tab_2, str())
+
+        self.horizontalLayout.addWidget(self.tabWidget)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+
+        self.tabWidget.setCurrentIndex(0)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Bank Assistant", None))
+        self.actionContact.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.analyze_btn.setText(QCoreApplication.translate("MainWindow", u"\u0410\u043d\u0430\u043b\u0438\u0437", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043b\u0438\u0435\u043d\u0442\u0441\u043a\u0438 \u043d\u043e\u043c\u0435\u0440", None))
+        self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"\u041a\u043b\u0438\u0435\u043d\u0442\u0441\u043a\u0438 \u0434\u0430\u043d\u043d\u0438", None))
+        self.exited_lbl.setText(QCoreApplication.translate("MainWindow", u"Exited: ", None))
+        self.is_active_member_lbl.setText(QCoreApplication.translate("MainWindow", u"Is active member:", None))
+        self.credit_score_lbl.setText(QCoreApplication.translate("MainWindow", u"Credit score: ", None))
+        self.num_of_products_lbl.setText(QCoreApplication.translate("MainWindow", u"Numer of products: ", None))
+        self.customer_id.setText(QCoreApplication.translate("MainWindow", u"Customer id: ", None))
+        self.geography_lbl.setText(QCoreApplication.translate("MainWindow", u"Geography: ", None))
+        self.balance_lbl.setText(QCoreApplication.translate("MainWindow", u"Balance: ", None))
+        self.has_cr_card_lbl.setText(QCoreApplication.translate("MainWindow", u"Has credit card: ", None))
+        self.tenure_lbl.setText(QCoreApplication.translate("MainWindow", u"Tenure: ", None))
+        self.age_lbl.setText(QCoreApplication.translate("MainWindow", u"Age:", None))
+        self.gender_lbl.setText(QCoreApplication.translate("MainWindow", u"Gender: ", None))
+        self.estimated_salary_lbl.setText(QCoreApplication.translate("MainWindow", u"Estimated salary: ", None))
+        self.surname_lbl.setText(QCoreApplication.translate("MainWindow", u"Surname: ", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_1), QCoreApplication.translate("MainWindow", u"\u0410\u043d\u0430\u043b\u0438\u0437", None))
+        self.selected_file_name_lbl.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u043d\u043d\u0438:", None))
+        self.open_file_btn.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0437\u0431\u0435\u0440\u0438 \u0444\u0430\u0439\u043b", None))
+        self.selected_file.setText("")
+        self.start_btn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0440\u0442", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0443\u0447\u0435\u043d\u0438\u0435", None))
+    # retranslateUi
+
